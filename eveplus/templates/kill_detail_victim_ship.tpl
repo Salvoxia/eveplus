@@ -1,26 +1,5 @@
-<div class="kl-detail-vicpilot">
-{cycle reset=true print=false name=ccl values="kb-detail-vicpilotbg,kb-detail-vicpilotbg"}
-	<table class="kb-table">
-		<col class="logo"/>
-		<col class="attribute-name"/>
-		<col class="attribute-data"/>
-		<tr class="{cycle name="ccl"}">
-			<td class="logo" rowspan="3"><img src="{$victimPortrait}" alt="victim"/> </td>
-			<td>Victim:</td>
-			<td><a href="{$victimURL}">{$victimName}</a></td>
-		</tr>
-		<tr class="{cycle name="ccl"}">
-			<td>Corp:</td>
-			<td><a href="{$victimCorpURL}">{$victimCorpName}</a></td>
-		</tr>
-		<tr class="{cycle name="ccl"}">
-			<td>Alliance:</td>
-			<td><a href="{$victimAllianceURL}">{$victimAllianceName}</a></td>
-		</tr>
-	</table>
-</div>
 <div class="kl-detail-vicship">
-{cycle reset=true print=false name=ccl values="kb-detail-vicpilotbg,kb-detail-vicpilotbg"}
+{cycle reset=true print=false name=ccl values="kb-table-row-even,kb-table-row-odd"}
 	<table class="kb-table">
 		<col class="logo"/>
 		<col class="attribute-name"/>
@@ -40,13 +19,24 @@
 		</tr>
 	{if $showiskd}
 		<tr class="{cycle name="ccl"}">
-			<td colspan="2">&nbsp;&nbsp;&nbsp;ISK Loss at time of kill:</td>
+			<td colspan="2">ISK Loss at time of kill:</td>
 			<td>{$totalLoss}</td>
 		</tr>
-		<tr class="totaldamagetaken">
-			<td colspan="2">&nbsp;&nbsp;&nbsp;Total Damage Taken:</td>
+		<tr class="{cycle name="ccl"}">
+			<td colspan="2">Total Damage Taken:</td>
 			<td>{$victimDamageTaken|number_format}</td>
 		</tr>
 	{/if}
+        {if isset($distanceToNearestCelestial) && $nearestCelestialName != ""}
+            <tr class="{cycle name="ccl"}">
+                    <td colspan="2">Location in System:</td>
+                    <td>{$distanceToNearestCelestial} from {$nearestCelestialName}</td>
+            </tr>
+        {else if $nearestCelestialName != ""}
+            <tr class="{cycle name="ccl"}">
+                    <td colspan="2">Nearest Celestial:</td>
+                    <td>{$nearestCelestialName}</td>
+            </tr>
+        {/if}
 	</table>
 </div>

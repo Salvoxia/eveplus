@@ -20,7 +20,7 @@ vertical-align: baseline;
 .navigation
 {
   background: transparent;
-.  padding: 0px;
+  padding: 0px;
   border-collapse: separate;
   border-spacing: 1px;
 }
@@ -1339,6 +1339,7 @@ img
 	margin-right: auto;
 	text-align: left;
 	width: 100%;
+	clear: left;
 }
 
 .kl-shiptype
@@ -2243,8 +2244,7 @@ resize: none;
   -webkit-border-bottom-left-radius: 3px; }
 form input[type=checkbox],
 form input[type=radio] {
-  display: none; }
-form .checkbox {
+
   position: relative;
   top: 2px;
   display: inline-block;
