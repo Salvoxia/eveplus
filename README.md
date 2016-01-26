@@ -4,7 +4,7 @@ EVE+ Theme for [Eve Development Killboard] (https://github.com/evekb/evedev-kb) 
 Original thread: http://evekb.org/forum/viewtopic.php?f=1033&t=21614
 
 ##Installation
-Upload the atxedk folder to your killboard/themes folder. Select the theme in ACP -> Global Options.
+Upload the eveplus folder to your killboard/themes folder. Select the theme in ACP -> Global Options.
 
 ###Ship Fitting Display
 
