@@ -18,7 +18,7 @@ The ideal width when creating a banner for this theme is: 1200px or below.
 
 ##Changelog after initial release
 
-#####2016/xx/xx
+#####2016/02/09
 
 * IDFeed: Added option to ignore NPC only kills
 * ACP Upgrade page: Removed obsolete elements for database upgrade
