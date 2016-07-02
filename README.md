@@ -18,6 +18,10 @@ The ideal width when creating a banner for this theme is: 1200px or below.
 
 ##Changelog after initial release
 
+#####2016/07/02
+
+* Added support for displaying daily stats summaries on the front page
+
 #####2016/02/09
 
 * IDFeed: Added option to ignore NPC only kills
