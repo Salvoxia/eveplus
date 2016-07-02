@@ -480,8 +480,22 @@ textarea.killmail
   font-size: 9.5px;
   font-weight: bold;
   padding: 4px;
-background: rgba(44, 44, 44, 0.42) 0 0 repeat-x;
+  background: rgba(44, 44, 44, 0.42) 0 0 repeat-x;
   color: #c1daec;
+}
+
+.kb-kl-table-summary
+{
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  height: 15px;
+  padding: 4px;
+}
+
+.kb-kl-summary-cell
+{
+  width: 33%;
 }
 
 .kb-table-row-odd
