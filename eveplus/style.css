@@ -2455,3 +2455,23 @@ text-transform: uppercase;
 .totaldamagetaken {
 background: rgba(83, 11, 11, 0.24);
 }
+
+form input.ssobutton
+{
+    background : url("https://web.ccpgamescdn.com/eveonlineassets/developers/eve-sso-login-white-small.png") no-repeat center center;
+    border : none;
+    width: 195px;
+    height: 30px;
+    color : transparent;
+    text-shadow: none;
+}
+
+form input.ssobutton:hover
+{
+    background : url("https://web.ccpgamescdn.com/eveonlineassets/developers/eve-sso-login-white-small.png") no-repeat center center;
+    border : none;
+    width: 195px;
+    height: 30px;
+    color : transparent;
+    text-shadow: none;
+}
